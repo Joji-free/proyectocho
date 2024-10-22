@@ -14,42 +14,54 @@
 
 
 <body>
-    
+
     <!DOCTYPE html>
     <html lang="es">
 
 
     <!-- Encabezado con logo y menú -->
     <header>
-       
+
         <div class="logo">
             <img src="imagenes/images.ch.jpg" alt="icono">
             <h1> Chocalateria</h1> <!--Creamos un titulo para la misma pagina web-->
         </div>
         <nav> <!--Definimos una seccion -->
             <ul> <!--Creamos una lista desordenada-->
-                <li><a href="#productos">Productos</a></li> <!--Creamos una lista para un menu-->
-                <li><a href="#precios">Fijación de Precios</a></li>
+                <li><a href="#productos" >Productos</a></li>
+                <!--Creamos una lista para un menu-->
+                <li><a href="#precios" >Fijación de Precios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-        <div class="cart-icon"> <!--Dos permite crear un estilo y en este caso seria un carrito de compras -->
-            Carrito de compras (0)
-        </div>
+
+
+
     </header>
 
-    <!-- Sección de Productos -->
     <section id="productos">
-        <h2>Productos</h2>
-        <p>Aquí encontrarás nuestra gama de productos disponibles.</p>
-        <!-- Puedes añadir una lista o galería de productos aquí -->
-        <ul> <!--Creamos una lista desordenada para cada uno de los precios -->
-            <li>Productos</li>
-            <li>Productos</li>
-            <li>Productos</li>
-            <li>Productos</li>
-            <li>Productos</li>
-        </ul>
+        <h2>Nuestros Chocolates</h2>
+        <div class="producto" data-nombre="Chocolate Oscuro" data-precio="2.50">
+            <h3>Chocolate Oscuro</h3>
+            <p>Delicioso chocolate oscuro al 70% de cacao.</p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+        <div class="producto" data-nombre="Chocolate con Leche" data-precio="2.00">
+            <h3>Chocolate con Leche</h3>
+            <p>Suave y cremoso chocolate con leche.</p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+        <div class="producto" data-nombre="Chocolate Blanco" data-precio="2.30">
+            <h3>Chocolate Blanco</h3>
+            <p>Dulce y cremoso chocolate blanco.</p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+    </section>
+
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito-lista"></ul>
+        <p id="total">Total: $0.00</p>
     </section>
 
     <!-- Sección de Fijación de Precios -->
@@ -78,11 +90,36 @@
         </form>
     </section>
 
+
+
+    <section id="contactos">
+        <!--Lista desorndenada para las redes-->
+
+        <ul class="header-social">
+
+            <li><a href="https://www.facebook.com/profile.php?id=100022877347182&locale=es_LA"><i
+                        class="fab fa-facebook" aria-hidden="true">FACEBOOK</i></a></li>
+
+            <li><a href="https://x.com/MartinS39055366"><i class="fab fa-twitter" aria-hidden="true">TWITTER</i></a>
+            </li>
+            <!--aria-hidden= no visible para el user-->
+
+            <li><a href="https://www.instagram.com/martinsebas17/"><i class="fab fa-instagram"
+                        aria-hidden="true">INSTAGRAM</i></a></li>
+
+            <li><a href="https://www.youtube.com/@HolaSoyGerman" class="fab fa-youtube" aria-hidden="true">YOUTUBE</a>
+            </li>
+
+        </ul>
+
+    </section>
+
     <!-- Pie de página -->
     <footer>
         <p>&copy; 2024 Tienda Online. Tod</p>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>

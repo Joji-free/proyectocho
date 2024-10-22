@@ -1,39 +1,182 @@
 nav {
     display: flex;
 }
+
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
     transition: color 0.3s;
+    text-align: center;
 }
+
 nav a:hover {
-    color: green;
+    color: #afa29b;
 }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
+    background-color: #d86755;
     color: white;
     padding: 10px 20px;
     line-height: 1.882;
 }
+
+
 .logo {
     display: flex;
     align-items: center;
 }
+
 .logo img {
     width: 100px;
     height: 100px;
     margin-right: 20px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
 }
-    
-html,body {
-    background: #B2644A;
+
+html,
+body {
+    background: white;
     font-family: "Poppins";
     font-size: 1.2rem;
     font-weight: 300;
     height: 100%;
+
+}
+
+/*Redes Sociales */
+.header-social a {
+    color: rgba(216, 228, 125, 0.77);
+}
+
+a:hover,
+/*color del link/*
+a:focus,/*brillo sobre el link*/
+a:active {
+    /*activación*/
+    color: rgba(244, 65, 77, 0.795);
+}
+
+.header-social {
+    background-color: #d86755;
+    display: flex;
+    /*Se utiliza para alinear los elementos*/
+    justify-content: center;
+    /*distribuye el espacio entre los elementos*/
+    padding: 0 0;
+    margin: 0 0;
+    width: 100%;
+    /*Espacio ocupado del contenedor*/
+    letter-spacing: 1.2px;
+    /*Espacio entre letras*/
+}
+
+.header-social li {
+    display: inline-block;
+    /*Posicion de las redes sociales*/
+    margin-right: 80px;
+    /*Epacio entre las opciones de navegacion*/
+    display: inline-block;
+    /*Posicion de la opciones*/
+    list-style: none;
+    /*Estilo de marcado de opcion*/
+
+}
+
+body {
+    font-family: "Poppins" ;
+}
+
+#cart {
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #d86755;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    /* Oculto por defecto */
+}
+
+.cart-hidden {
+    display: none;
+    /* Clase para ocultar */
+}
+
+.cart-visible {
+    display: block;
+    /* Clase para mostrar */
+}
+
+section {
+    padding: 20px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#carrito {
+    background: #f8f8f8;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#contacto-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto-form input,
+#contacto-form textarea {
+    margin: 5px 0;
+    padding: 10px;
+}
+
+button {
+    background: #d86755;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d86755;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #d86755;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
     
 }
+
