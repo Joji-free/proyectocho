@@ -23,28 +23,12 @@ function agregarAlCarrito(nombre, precio) {
     carrito.push({ nombre, precio });
     // Suma el precio del nuevo producto al total acumulado.
     total += precio;
-    // Llama a la función para actualizar la visualización del carrito.
-    actualizarCarrito();
+    
 }
 
-function actualizarCarrito() {
-    // Obtiene el elemento de la lista del carrito en el DOM.
-    const carritoLista = document.getElementById('carrito-lista');
-    // Limpia el contenido de la lista del carrito para evitar duplicados.
-    carritoLista.innerHTML = '';
-
-    // Repite  sobre cada producto en el carrito para crear elementos de lista.
-    carrito.forEach(item => {
-        // Crea un nuevo elemento de lista.
-        const li = document.createElement('li');
-        // Establece el texto del elemento de lista con el nombre y precio del producto.
-        li.textContent = `${item.nombre} - $${item.precio.toFixed(2)}`;
-        // Añade el elemento de lista a la lista del carrito en el DOM.
-        carritoLista.appendChild(li);
-    });
 
     // Actualiza el elemento que muestra el total acumulado en el carrito.
-    document.getElementById('total').textContent = `Total: $${total.toFixed(2)}`;
+    document.getElementById('total').textContent = `Total: $${total.toFixed(2)}`;{
 }
 
 // Agrega un evento al formulario de contacto para manejar el envío.
