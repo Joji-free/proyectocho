@@ -48,7 +48,7 @@ function actualizarCarrito() {
 }
 
 // Agrega un evento al formulario de contacto para manejar el envío.
-document.getElementById('contacto-form').addEventListener('submit', (e) => {
+document.getElementById('contacto').addEventListener('submit', (e) => {
     // Previene el comportamiento predeterminado del formulario (no recargar la página).
     e.preventDefault();
     // Muestra un mensaje de agradecimiento al usuario.
