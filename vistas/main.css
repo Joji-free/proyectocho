@@ -40,7 +40,6 @@ nav ul li {
     margin: 0 15px;
 }
 
-
 /* Header */
 header {
     display: flex;
@@ -84,12 +83,11 @@ header {
     display: flex;
     justify-content: center;
     /*Se utiliza para alinear los elementos*/
-
     padding: 0;
     width: 100%;
     /*Espacio ocupado del contenedor*/
-
-    letter-spacing: 1.2px;
+    letter-spacing: 5px;
+    
 }
 
 /*Espacio entre letras*/
@@ -117,8 +115,10 @@ header {
     border: 1px solid #d86755;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: none;
-    /* Oculto por defecto */
+
 }
+
+/* Oculto por defecto */
 
 .cart-hidden {
     display: none;
@@ -181,7 +181,7 @@ footer {
 }
 
 
-@media (max-width: 630px) {
+@media (max-width: 560px) {
 
     nav {
         flex-direction: row;
@@ -193,6 +193,7 @@ footer {
         /* Cambia la lista a columna */
         align-items: center;
         /* Centra los elementos */
+        
     }
 
     .producto {
@@ -202,7 +203,7 @@ footer {
 
     .header-social {
         flex-direction: row;
-        /* Cambia a columna en pantallas pequeñas */
+        /* Cambia en pantallas pequeñas */
     }
 
     .header-social li {
@@ -220,8 +221,8 @@ footer {
     }
 }
 
-@media (max-width: 630px) {
-
+@media (max-width: 610px) {
+    
     nav a {
         margin: 5px 0;
         /* Reduce el margen en pantallas muy pequeñas */
@@ -233,5 +234,5 @@ footer {
         height: 80px;
     }
 
-}
 
+}
