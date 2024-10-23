@@ -26,38 +26,56 @@
             <img src="imagenes/images.ch.jpg" alt="icono">
             <h1> Chocalateria</h1> <!--Creamos un titulo para la misma pagina web-->
         </div>
+        
         <nav> <!--Definimos una seccion -->
-            <ul> <!--Creamos una lista desordenada-->
-                <li><a href="#productos" >Productos</a></li>
+            
+            <ul >
+                <li><a href="#inicio"></a></li>
+                <li><a href="#productos">>Productos</a></li>
                 <!--Creamos una lista para un menu-->
-                <li><a href="#precios" >Fijación de Precios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#precios">>Fijación de Precios</a></li>
+                <li><a href="#contacto">>Contacto</a></li>
             </ul>
         </nav>
-
-
-
+        
+       
     </header>
-
+   
     <section id="productos">
         <h2>Nuestros Chocolates</h2>
-        <div class="producto" data-nombre="Chocolate Oscuro" data-precio="2.50">
+        <!-- Lista o tabla de productos -->
+        <div class="producto" data-nombre="Chocolate Oscuro" data-precio="2.00">
             <h3>Chocolate Oscuro</h3>
-            <p>Delicioso chocolate oscuro al 70% de cacao.</p>
+            <img src="imagenes/Chocolate-bitter.jpg" alt="chocolate">
+            <p>Delicioso chocolate oscuro contiene un 75% de cacao.</p>
             <button class="add-to-cart">Añadir al Carrito</button>
         </div>
-        <div class="producto" data-nombre="Chocolate con Leche" data-precio="2.00">
-            <h3>Chocolate con Leche</h3>
-            <p>Suave y cremoso chocolate con leche.</p>
+        <div class="producto" data-nombre="Chocolate con leche y cafe" data-precio="2.49">
+            <h3>Chocolate con leche y cafe </h3>
+            <img src="imagenes/chocolate con leche .jpg" alt="">
+            <p>Suave y cremoso chocolate con leche y cafe 55% .</p>
             <button class="add-to-cart">Añadir al Carrito</button>
         </div>
-        <div class="producto" data-nombre="Chocolate Blanco" data-precio="2.30">
+        <div class="producto" data-nombre="Chocolate Blanco" data-precio="1.20">
             <h3>Chocolate Blanco</h3>
+            <img src="imagenes/chocolate blanco.jpg" alt="">
             <p>Dulce y cremoso chocolate blanco.</p>
             <button class="add-to-cart">Añadir al Carrito</button>
         </div>
+        <div class="producto" data-nombre="Mix bombones" data-precio="3.35">
+            <h3>Mix bombones 120 gr</h3>
+            <img src="imagenes/bombones.jpg" alt="">
+            <p>Dulce y cremoso chocolate.</p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+        <div class="producto" data-nombre="Crema chocodamia" data-precio="5.50">
+            <h3>Crema chocodamia 250g</h3>
+            <img src="imagenes/crema.jpg" alt="">
+            <p>Delicioso crema de chocolate </p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
     </section>
-
+<!--Creamos un carritop en el que nos permita llevar la cuenta de cada compra selecionada -->
     <section id="carrito">
         <h2>Carrito de Compras</h2>
         <ul id="carrito-lista"></ul>
@@ -66,9 +84,15 @@
 
     <!-- Sección de Fijación de Precios -->
     <section id="precios">
-        <h2>Fijación de Precios</h2>
+        <h2>Fijación de Productos </h2>
         <p>Consulta nuestros precios competitivos para cada producto.</p>
         <!-- Lista o tabla de precios -->
+        <div class="producto" data-nombre="Caja detalle chocolate" data-precio="4.30">
+            <h3>Caja detalle chocolate 120g</h3>
+            <img src="imagenes/detalle.jpg" alt="">
+            <p>Precioso detalle de chocolates </p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
     </section>
 
     <!-- Sección de Contacto -->
@@ -84,7 +108,7 @@
             <input type="email" id="email" name="email" required><br><br>
 
             <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="5" cols="30"></textarea><br><br>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea><br><br>
 
             <button type="submit">Enviar</button> <!--Creamso un boton de formulario-->
         </form>
@@ -96,27 +120,20 @@
         <!--Lista desorndenada para las redes-->
 
         <ul class="header-social">
-
-            <li><a href="https://www.facebook.com/profile.php?id=100022877347182&locale=es_LA"><i
-                        class="fab fa-facebook" aria-hidden="true">FACEBOOK</i></a></li>
-
-            <li><a href="https://x.com/MartinS39055366"><i class="fab fa-twitter" aria-hidden="true">TWITTER</i></a>
-            </li>
-            <!--aria-hidden= no visible para el user-->
-
-            <li><a href="https://www.instagram.com/martinsebas17/"><i class="fab fa-instagram"
-                        aria-hidden="true">INSTAGRAM</i></a></li>
-
-            <li><a href="https://www.youtube.com/@HolaSoyGerman" class="fab fa-youtube" aria-hidden="true">YOUTUBE</a>
-            </li>
-
+            <li><a href="https://www.facebook.com/anderson.soto.98031?mibextid=ZbWKwL"><i class="fab fa-facebook"
+                        aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/Joji-free"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/klaysto_0/profilecard/?igsh=MXdibDV6NW8xcDJnbw=="><i
+                        class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.youtube.com/@sotoanderson5493"><i class="fab fa-youtube"
+                        aria-hidden="true"></i></a></li>
         </ul>
 
     </section>
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Tienda Online. Tod</p>
+        <p>&copy; 2024 Tienda Online.</p>
     </footer>
 
     <script src="js/main.js"></script>

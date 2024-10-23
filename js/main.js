@@ -1,3 +1,5 @@
+
+
 document.querySelectorAll('.add-to-cart').forEach(button => {
     button.addEventListener('click', () => {
         const producto = button.parentElement;

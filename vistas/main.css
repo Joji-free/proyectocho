@@ -1,5 +1,19 @@
+/* Estilos generales */
+html,
+body {
+    background: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    height: 100%;
+    margin: 0;
+}
+
+/* Navegación */
 nav {
     display: flex;
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan */
 }
 
 nav a {
@@ -17,19 +31,17 @@ nav a:hover {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que la lista se envuelva */
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
 
-}
-
+/* Header */
 header {
     display: flex;
     align-items: center;
@@ -40,7 +52,19 @@ header {
     line-height: 1.882;
 }
 
+/* Productos */
+.producto img {
+    width: 100%;
+    /* Hacer que la imagen sea responsiva */
+    max-width: 200px;
+    /* Limitar el tamaño máximo */
+    height: auto;
+    /* Mantener la proporción */
+    margin-right: 20px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
+}
 
+/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -53,59 +77,36 @@ header {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
 }
 
-html,
-body {
-    background: white;
-    font-family: "Poppins";
-    font-size: 1.2rem;
-    font-weight: 300;
-    height: 100%;
 
+/* Redes Sociales */
+.header-social {
+    background-color: #d86755;
+    display: flex;
+    justify-content: center;
+    /*Se utiliza para alinear los elementos*/
+
+    padding: 0;
+    width: 100%;
+    /*Espacio ocupado del contenedor*/
+
+    letter-spacing: 1.2px;
 }
 
-/*Redes Sociales */
+/*Espacio entre letras*/
+
+
 .header-social a {
     color: rgba(216, 228, 125, 0.77);
 }
 
-a:hover,
-/*color del link/*
-a:focus,/*brillo sobre el link*/
-a:active {
-    /*activación*/
-    color: rgba(244, 65, 77, 0.795);
-}
-
-.header-social {
-    background-color: #d86755;
-    display: flex;
-    /*Se utiliza para alinear los elementos*/
-    justify-content: center;
-    /*distribuye el espacio entre los elementos*/
-    padding: 0 0;
-    margin: 0 0;
-    width: 100%;
-    /*Espacio ocupado del contenedor*/
-    letter-spacing: 1.2px;
-    /*Espacio entre letras*/
-}
-
 .header-social li {
     display: inline-block;
-    /*Posicion de las redes sociales*/
-    margin-right: 80px;
-    /*Epacio entre las opciones de navegacion*/
-    display: inline-block;
-    /*Posicion de la opciones*/
+    margin-right: 20px;
+    /* Reduce el espacio entre opciones */
     list-style: none;
-    /*Estilo de marcado de opcion*/
-
 }
 
-body {
-    font-family: "Poppins" ;
-}
-
+/* Carrito */
 #cart {
     position: fixed;
     top: 20%;
@@ -129,10 +130,12 @@ body {
     /* Clase para mostrar */
 }
 
+/* Sección */
 section {
     padding: 20px;
 }
 
+/* Productos */
 .producto {
     border: 1px solid #ccc;
     padding: 10px;
@@ -140,12 +143,7 @@ section {
     text-align: center;
 }
 
-#carrito {
-    background: #f8f8f8;
-    padding: 20px;
-    margin: 20px 0;
-}
-
+/* Formulario de contacto */
 #contacto-form {
     display: flex;
     flex-direction: column;
@@ -157,6 +155,7 @@ section {
     padding: 10px;
 }
 
+/* Botón */
 button {
     background: #d86755;
     color: white;
@@ -167,8 +166,10 @@ button {
 
 button:hover {
     background: #d86755;
+    /* Podrías cambiar el color en hover si lo deseas */
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
@@ -177,6 +178,60 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    
+}
+
+
+@media (max-width: 630px) {
+
+    nav {
+        flex-direction: row;
+        /* Cambia a columna en pantallas pequeñas */
+    }
+
+    nav ul {
+        flex-direction: row;
+        /* Cambia la lista a columna */
+        align-items: center;
+        /* Centra los elementos */
+    }
+
+    .producto {
+        margin: 10px 0;
+        /* Ajusta el margen para productos */
+    }
+
+    .header-social {
+        flex-direction: row;
+        /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .header-social li {
+        margin-right: 0;
+        /* Elimina el margen a la derecha */
+        margin-bottom: 10px;
+        /* Agrega margen en la parte inferior */
+    }
+
+    #cart {
+        width: 80%;
+        /* Aumenta el ancho del carrito en pantallas pequeñas */
+        right: 5%;
+        /* Ajusta la posición */
+    }
+}
+
+@media (max-width: 630px) {
+
+    nav a {
+        margin: 5px 0;
+        /* Reduce el margen en pantallas muy pequeñas */
+    }
+
+    .logo img {
+        width: 80px;
+        /* Reduce el tamaño del logo */
+        height: 80px;
+    }
+
 }
 
